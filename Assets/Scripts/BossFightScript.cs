@@ -273,7 +273,7 @@ public class BossFightScript : MonoBehaviour
             else
             {
                 attackFeedback =
-                    "Businessman failed to convince the rival and it seems squirrel is now annoyed.";
+                    "Businessman failed to convince the rival and it seems Frothgar is now annoyed.";
             }
         }
         else
