@@ -14,4 +14,73 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/CardChoiceScene.unity
     guid: 101db66679f820a4aa684f5d49369058
+  - enabled: 1
+    path: Assets/Scenes/StoryScenes/IntroScene1.unity
+    guid: d59247952a5ce8d4b8117c626b4c79f1
+  - enabled: 1
+    path: Assets/Scenes/StoryScenes/IntroScene2.unity
+    guid: 4ae8e985ee3c6df4f85283481ee72ff7
+  - enabled: 1
+    path: Assets/Scenes/StoryScenes/IntroScene3.unity
+    guid: 009263acce6537b49ada6a9c520c7bc0
+  - enabled: 1
+    path: Assets/Scenes/GameEndScene.unity
+    guid: 2bf84ca96e6f85e4bb1a9f3a92c7d1fa
+  - enabled: 1
+    path: Assets/Scenes/StoryScenes/Chap2Scene1_Farmer.unity
+    guid: 17a0401b3ca10fd46bfc6a25f72e2aab
+  - enabled: 1
+    path: Assets/Scenes/StoryScenes/Chap2Scene2_Farmer.unity
+    guid: 8cd6ed99f531f254d9b22ff0f2a7d62f
+  - enabled: 1
+    path: Assets/Scenes/StoryScenes/Chap2Scene3_Farmer.unity
+    guid: 31f8840dbe39ef1429e7091419005929
+  - enabled: 1
+    path: Assets/Scenes/StoryScenes/Chap2Scene4_Farmer.unity
+    guid: f971bd421c33e3c448a78df8ef060f1e
+  - enabled: 1
+    path: Assets/Scenes/StoryScenes/Ch3Scene1_Squirrel.unity
+    guid: 849d7c6aac07528419d8b82771e6b9b3
+  - enabled: 1
+    path: Assets/Scenes/StoryScenes/Ch3Scene2_Squirrel/Ch3Scene21_Intimidate.unity
+    guid: 81c38a4987296674d862671c5ebdc1fd
+  - enabled: 1
+    path: Assets/Scenes/StoryScenes/Ch3Scene2_Squirrel/Ch3Scene23_Sneak.unity
+    guid: a3a95585013cc72439ac9dbf123b68b4
+  - enabled: 1
+    path: Assets/Scenes/StoryScenes/Ch3Scene3_SquirrelFight.unity
+    guid: f7e2e14bf47cc814b89e6b8ebe626b90
+  - enabled: 1
+    path: Assets/Scenes/DiedScene.unity
+    guid: 8f2f8770fda9a384293f9b123f61d62b
+  - enabled: 1
+    path: Assets/Scenes/StoryScenes/Ch3Scene4_Squirrel.unity
+    guid: b7d88d7bbf5d3e643a9350bc7cda3c5f
+  - enabled: 1
+    path: Assets/Scenes/StoryScenes/Ch4Scene1_Villain.unity
+    guid: d8fcb86cbc6741c4cbb2d23ff159401f
+  - enabled: 1
+    path: Assets/Scenes/StoryScenes/Ch4Scene2_Villain.unity
+    guid: 93f6bad98f871aa4bac12b1be9439d70
+  - enabled: 1
+    path: Assets/Scenes/StoryScenes/Ch4Scene3_Villain.unity
+    guid: 578a27c78e2aaae44bb400dc27f427c0
+  - enabled: 1
+    path: Assets/Scenes/StoryScenes/Ch4Scene4_Villain.unity
+    guid: 40b0b58fd65cc524895653eef27377f3
+  - enabled: 1
+    path: Assets/Scenes/StoryScenes/BossFight1.unity
+    guid: 79b540f89a271f541b1eb8442ffb6eb8
+  - enabled: 1
+    path: Assets/Scenes/StoryScenes/BossFight2.unity
+    guid: 7a24d1b23116b3845a5d62b681a41b16
+  - enabled: 1
+    path: Assets/Scenes/StoryScenes/BossFight3.unity
+    guid: 3639b0206f63b1e458ca34e591e4727f
+  - enabled: 1
+    path: Assets/Scenes/StoryScenes/BossFight4.unity
+    guid: 12cd43508fab86b4ca3a2a2f86764efa
+  - enabled: 1
+    path: Assets/Scenes/StoryScenes/BossFight5.unity
+    guid: c718f340c191deb4fa557e878718a9a6
   m_configObjects: {}

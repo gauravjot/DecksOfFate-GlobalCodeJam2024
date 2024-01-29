@@ -1,52 +1,88 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
-using UnityEngine.EventSystems;
 
 public class SceneHandler : MonoBehaviour
 {
+    [SerializeField]
+    RectTransform fader;
 
-    [SerializeField] RectTransform fader;
+    [SerializeField]
+    float faderScaleTime = 0.2f;
     public AudioSource buttonClickSound;
 
-    private void Start() {
+    private void Start()
+    {
         fader.gameObject.SetActive(true);
-        LeanTween.scale(fader, new Vector3(1,1,1), 0f);
-        LeanTween.scale (fader, Vector3.zero, 0.5f).setEase (LeanTweenType.easeInOutQuad).setOnComplete (() => {
-            fader.gameObject.SetActive (false);
-        });
+        LeanTween.alpha(fader, 1, 0f);
+        LeanTween
+            .alpha(fader, 0, faderScaleTime)
+            .setEase(LeanTweenType.easeInOutQuad)
+            .setOnComplete(() =>
+            {
+                fader.gameObject.SetActive(false);
+            });
     }
 
     public void OpenMenuScene()
     {
         buttonClickSound.Play();
         fader.gameObject.SetActive(true);
-        LeanTween.scale(fader, Vector3.zero, 0f);
-        LeanTween.scale(fader, new Vector3(1,1,1), 0.5f).setEase (LeanTweenType.easeInOutQuad).setOnComplete(()=>{
-                    SceneManager.LoadScene(0);
-        });
+        LeanTween.alpha(fader, 0, 0f);
+        LeanTween
+            .alpha(fader, 1, faderScaleTime)
+            .setEase(LeanTweenType.easeInOutQuad)
+            .setOnComplete(() =>
+            {
+                SceneManager.LoadScene(0);
+            });
     }
-    
+
     public void OpenGameScene()
     {
         buttonClickSound.Play();
+        // Clear cards
+        Player player = Player.Instance;
+        player.removeAllPlayerCards();
         fader.gameObject.SetActive(true);
-        LeanTween.scale(fader, Vector3.zero, 0f);
-        LeanTween.scale(fader, new Vector3(1,1,1), 0.5f).setEase (LeanTweenType.easeInOutQuad).setOnComplete(()=>{
-                    SceneManager.LoadScene(1);
-        });
+        LeanTween.alpha(fader, 0, 0f);
+        LeanTween
+            .alpha(fader, 1, faderScaleTime)
+            .setEase(LeanTweenType.easeInOutQuad)
+            .setOnComplete(() =>
+            {
+                SceneManager.LoadScene(3);
+            });
     }
-    
+
+    public void OpenCreditsScene()
+    {
+        buttonClickSound.Play();
+        fader.gameObject.SetActive(true);
+        LeanTween.alpha(fader, 0, 0f);
+        LeanTween
+            .alpha(fader, 1, faderScaleTime)
+            .setEase(LeanTweenType.easeInOutQuad)
+            .setOnComplete(() =>
+            {
+                SceneManager.LoadScene(6);
+            });
+    }
+
     public void OpenAllCardsScene()
     {
         buttonClickSound.Play();
         fader.gameObject.SetActive(true);
-        LeanTween.scale(fader, Vector3.zero, 0f);
-        LeanTween.scale(fader, new Vector3(1,1,1), 0.5f).setEase (LeanTweenType.easeInOutQuad).setOnComplete(()=>{
-                    SceneManager.LoadScene(2);
-        });
+        LeanTween.alpha(fader, 0, 0f);
+        LeanTween
+            .alpha(fader, 1, faderScaleTime)
+            .setEase(LeanTweenType.easeInOutQuad)
+            .setOnComplete(() =>
+            {
+                SceneManager.LoadScene(2);
+            });
     }
 
-    public void ExitGame() 
+    public void ExitGame()
     {
         Application.Quit();
     }
